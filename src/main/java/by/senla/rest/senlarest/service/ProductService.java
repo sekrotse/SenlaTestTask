@@ -6,10 +6,13 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+
 public interface ProductService {
     List<Product> findAll();
+
     Optional<Product> findById(Integer id);
+
     void save(Product product);
+
     void delete(Product product);
 }
