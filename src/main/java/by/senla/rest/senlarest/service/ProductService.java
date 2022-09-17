@@ -1,10 +1,12 @@
 package by.senla.rest.senlarest.service;
 
 import by.senla.rest.senlarest.entity.Product;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public interface ProductService {
     List<Product> findAll();
     Optional<Product> findById(Integer id);
